@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: lime;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: black;
+    font-family: cursive;  
+    position: relative;
+}
+.container{
+    width: 400px;
+    /* height: 220px; */
+    background: pink;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+overflow: hidden;
+
+}
+.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.enter-task{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+
+}
+.enter-task::placeholder{
+    opacity: 0.3;
+}
+.new-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: yellow;
+    border-top: 2px dotted rgb(174, 173, 173);
+    
+}
+.new-task.active #checked{
+    accent-color: darkgrey;
+}
+
+.new-task.active span{
+    text-decoration: line-through;
+    color: darkgrey;
+}
+
+#checked{
+    accent-color:green;
+    transform: scale(1.1);
+    margin-right: 5px;
+    cursor: pointer;
+   
+}
+
+.fa-trash{
+    color: red;
+    cursor: pointer;
+}
